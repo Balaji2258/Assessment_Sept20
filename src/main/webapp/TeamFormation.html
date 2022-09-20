@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form Team</title>
+<style type="text/css">
+	body {
+	   	background: black;
+	}
+		        		    
+	a {
+	 	background: beige;
+	   	padding: 5px;
+	   	color: black;
+	}
+		        		    
+	a:hover {
+	   	background: grey;
+	   	color: beige;
+	}
+		        		    
+	h1 {
+		text-align: center;
+		padding: 80px 10px 10px 10px;
+	   	color: beige;
+	}
+		        		    
+	form {
+		margin-left: auto;
+		margin-right: auto;
+		background: bisque;
+		width: 30%;
+		align-self: center;
+		border-style: double;
+		border-width: thick;
+		border-color: olive;
+	}
+	
+	table {
+		padding: 20px 30px 20px 40px;
+	}
+							
+	th, td {
+		padding: 20px 10px;
+	}
+							
+	.nc {
+		text-align: left;
+	}
+	
+	select, input {
+		width: 200px;
+		height: 25px;
+	}
+	
+	.btn {
+		width: 150px;
+		background: beige;
+		font-weight: bolder;
+	}
+	
+	.btn:hover {
+		background: black;
+		color: beige;
+	}
+</style>
+
+</head>
+<body>
+	<header>
+		<a href='AddPlayer.html'>Add new player</a>&nbsp;&nbsp;
+		<a href='ViewPlayers'>View all players</a>
+		<h1>Form Team</h1>
+	</header>
+	<div class="add">
+		<form action="TeamFormation">
+		<table>
+			<tr><td>Enter no. of bowlers required : </td><td><input type="int" name="reqBowlers" required="required"></td></tr>
+			<tr><td colspan="2" align="center"><input type="submit" value="CONTINUE" class="btn"></td></tr>
+		</table>
+		</form>
+	</div>
+</body>
+</html>

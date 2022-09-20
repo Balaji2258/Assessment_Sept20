@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Player</title>
+<style type="text/css">
+	body {
+	   	background: black;
+	}
+		        		    
+	a {
+	 	background: beige;
+	   	padding: 5px;
+	   	color: black;
+	}
+		        		    
+	a:hover {
+	   	background: grey;
+	   	color: beige;
+	}
+		        		    
+	h1 {
+		text-align: center;
+		padding: 80px 10px 10px 10px;
+	   	color: beige;
+	}
+		        		    
+	form {
+		margin-left: auto;
+		margin-right: auto;
+		background: bisque;
+		width: 30%;
+		align-self: center;
+		border-style: double;
+		border-width: thick;
+		border-color: olive;
+	}
+	
+	table {
+		padding: 20px 30px 20px 40px;
+	}
+							
+	th, td {
+		padding: 20px 10px;
+	}
+							
+	.nc {
+		text-align: left;
+	}
+	
+	select, input {
+		width: 200px;
+		height: 25px;
+	}
+	
+	.btn {
+		width: 150px;
+		background: beige;
+		font-weight: bolder;
+	}
+	
+	.btn:hover {
+		background: black;
+		color: beige;
+	}
+</style>
+</head>
+<body>
+	<header>
+		<a href='ViewPlayers'>View all players</a>&nbsp;&nbsp;
+		<a href='TeamFormation.html'>View final team</a>
+		<h1>ADD PLAYER</h1>
+	</header>
+
+	<div class="add">
+		<h4>Enter Player Details</h4>
+		<form action="AddPlayer">
+		<table>
+			<tr><td>Enter name: </td><td><input type="String" name="name" required="required"></td></tr>
+			<tr><td>Enter no. of matches played: </td><td><input type="int" name="matchesPlayed" required="required"></td></tr>
+			<tr><td>Enter total runs scored: </td><td><input type="int" name="totRuns" required="required"></td></tr>
+			<tr><td>Enter highest score: </td><td><input type="int" name="highScore"></td></tr>
+			<tr><td>Enter no. of wickets taken: </td><td><input type="int" name="wktsTaken"></td></tr>
+			<tr><td>Enter no. of ducked out matches: </td><td><input type="int" name="outOnZero"></td></tr>
+			<!-- tr><td>Enter player type (batsman/bowler/wicket-keeper/all-rounder): </td><td><input type="String" name="type" required="required"></td></tr-->
+			<tr><td>Select player type</td><td>
+			<select name="type" required="required">
+				<option value="">Select</option>
+			  	<option value="batsman">Batsman</option>
+			  	<option value="bowler">Bowler</option>
+			  	<option value="wicketkeeper">Wicket-keeper</option>
+			  	<option value="allrounder">All-rounder</option>
+			</select>
+			</td>
+			<tr><td colspan="2" align="center"><input type="submit" value="ADD" class="btn"></td></tr>
+		</table>
+		</form>
+	</div>
+</body>
+</html>

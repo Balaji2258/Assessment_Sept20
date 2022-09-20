@@ -1,0 +1,9 @@
+@charset "UTF-8";
+table {
+	background: bisque
+}
+
+th, td {
+	padding: 20px;
+	text-align: left;
+}
