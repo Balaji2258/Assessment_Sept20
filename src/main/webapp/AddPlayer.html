@@ -8,22 +8,24 @@
 	   	background: black;
 	}
 		        		    
-	a {
-	 	background: beige;
-	   	padding: 5px;
-	   	color: black;
-	}
-		        		    
-	a:hover {
-	   	background: grey;
-	   	color: beige;
-	}
-		        		    
-	h1 {
-		text-align: center;
-		padding: 80px 10px 10px 10px;
-	   	color: beige;
-	}
+	.button {
+        		    	background: beige;
+        		    	color: black;
+        		    	padding: 5px;
+        		    	height: 40px;
+        		    	width: 150px;
+        		    }
+        		    
+        		    .button:hover {
+        		    	background: grey;
+        		    	color: beige;
+        		    }
+        		    
+        		    h1 {
+        		    	text-align: center;
+						padding: 10px;
+					   	color: beige;
+        		    }
 		        		    
 	form {
 		margin-left: auto;
@@ -67,8 +69,8 @@
 </head>
 <body>
 	<header>
-		<a href='ViewPlayers'>View all players</a>&nbsp;&nbsp;
-		<a href='TeamFormation.html'>View final team</a>
+		<a href='ViewPlayers'><input type='button' class='button' value='View all players'></a>&nbsp;&nbsp;
+		<a href='TeamFormation.html'><input type='button' class='button' value='View final team'></a>
 		<h1>ADD PLAYER</h1>
 	</header>
 

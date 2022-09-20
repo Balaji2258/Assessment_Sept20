@@ -37,22 +37,24 @@ public class UpdatePlayer extends HttpServlet {
 							   	background: black;
 							}
 								        		    
-							a {
-							 	background: beige;
-							   	padding: 5px;
-							   	color: black;
-							}
-								        		    
-							a:hover {
-							   	background: grey;
+							.button {
+		        		    	background: beige;
+		        		    	color: black;
+		        		    	padding: 5px;
+		        		    	height: 40px;
+		        		    	width: 150px;
+		        		    }
+		        		    
+		        		    .button:hover {
+		        		    	background: grey;
+		        		    	color: beige;
+		        		    }
+		        		    
+		        		    h1 {
+		        		    	text-align: center;
+								padding: 10px;
 							   	color: beige;
-							}
-								        		    
-							h1 {
-								text-align: center;
-								padding: 80px 10px 10px 10px;
-							   	color: beige;
-							}
+		        		    }
 								        		    
 							form {
 								margin-left: auto;
@@ -95,9 +97,9 @@ public class UpdatePlayer extends HttpServlet {
 						</style>
 						""");
 				out.println("<header>");
-		        out.println("<a href='AddPlayer.html'>Add new player</a>&nbsp;&nbsp;");
-		        out.println("<a href='ViewPlayers'>View all players</a>");
-		        out.println("<h1>Update Player</h1>"); 
+		        out.println("<a href='AddPlayer.html'><input type='button' class='button' value='Add new player'></a>&nbsp;&nbsp;");
+		        out.println("<a href='ViewPlayers'><input type='button' class='button' value='View all players'></a>");
+		        out.println("<h1>UPDATE PLAYER</h1>"); 
 		        out.println("</header>");
 				out.println("<form action='Update' method='post'>\n"
 						+ "	<table>"

@@ -29,19 +29,23 @@ public class ViewPlayers extends HttpServlet {
         		    	background: black;
         		    }
         		    
-        		    a {
+        		    .button {
         		    	background: beige;
         		    	color: black;
         		    	padding: 5px;
+        		    	height: 40px;
+        		    	width: 150px;
         		    }
         		    
-        		    a:hover {
+        		    .button:hover {
         		    	background: grey;
         		    	color: beige;
         		    }
         		    
         		    h1 {
-        		    	color: beige;
+        		    	text-align: center;
+						padding: 10px;
+					   	color: beige;
         		    }
         		    
 					table {
@@ -60,9 +64,9 @@ public class ViewPlayers extends HttpServlet {
         		""");
         
         out.println("<header>");
-        out.println("<a href='AddPlayer.html'>Add new player</a>&nbsp;&nbsp;");
-        out.println("<a href='TeamFormation.html'>View final team</a>");
-        out.println("<h1>Player List</h1>"); 
+        out.println("<a href='AddPlayer.html'><input type='button' class='button' value='Add new player'></a>&nbsp;&nbsp;");
+        out.println("<a href='TeamFormation.html'><input type='button' class='button' value='View final team'></a>");
+        out.println("<h1>PLAYER LIST</h1>"); 
         out.println("</header>");
           
         out.print("<table border='1' width='100%'");  
